@@ -1,4 +1,4 @@
-# teamcity
+# Cardano Binaries teamcity build
 1. Navigate into the directoy for your OS.
 2. execute "docker-compose up --no-start"
 3. execute "docker-compose start"
