@@ -1,0 +1,20 @@
+version: "2.1"
+services:
+  server:
+    image: jetbrains/teamcity-server:${TEAMCITY_VERSION}
+    ports:
+      - "8112:8111"
+    volumes:
+      - ./data_dir:/data/teamcity_server/datadir
+      - ./log_dir:/opt/teamcity/logs
+  agent:
+    build:
+      context: ../agents/cardano-agent
+    image: teamcity-cardano-agent:1.0
+    privileged: true
+    volumes:
+      - ../agents/cardano-agent/conf:/data/teamcity_agent/conf
+      - ../agents/cardano-agent/archives:/opt/buildagent/archives
+    environment:
+      - AGENT_NAME="Cardano Build Agent"
+      - SERVER_URL=http://server:8111
