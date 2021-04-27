@@ -12,6 +12,6 @@
 12. Leave this docker build running and it will build any new tags (1.2*) automatically 
 13. Check the build time for the database update and decide if it is worth copying it or simply letting the node updat eby itself.
 
-Finally, if you are using windows you might see all of your memory being consumed by vmmem process. This is WSL2.
+Finally, if you are using windows, you might see all of your memory being consumed by vmmem process. This is WSL2.
 You can limit the memory that this guy can have by following this guide.
 https://medium.com/@lewwybogus/how-to-stop-wsl2-from-hogging-all-your-ram-with-docker-d7846b9c5b37
