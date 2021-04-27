@@ -10,7 +10,7 @@
 10. Select projects -> Cardano Node -> Build Chains -> Run -> Changes -> Select the tag you wish to build and Run Build
 11. Grab your artifatcs and upload them to your server
 12. Leave this docker build running and it will build any new tags (1.2*) automatically 
-13. Check the build time for the database update and decide if it is worth copying it or simply letting the node updat eby itself.
+13. Check the build time for the database update and decide if it is worth copying it or simply letting the node update by itself.
 
 Finally, if you are using windows, you might see all of your memory being consumed by vmmem process. This is WSL2.
 You can limit the memory that this guy can have by following this guide.
